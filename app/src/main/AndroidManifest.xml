@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignmentone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AssignmentOne">
+        <activity
+            android:name=".Screen3"
+            android:label=" Screen 3 Visibility"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".LoginUi"
+            android:exported="false"
+            android:label="Screen 2 login"></activity>
+        <activity
+            android:name=".screen2"
+            android:exported="false"
+            android:label="Screen 1 Relative Layout"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Screen 1 Linear Layout">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

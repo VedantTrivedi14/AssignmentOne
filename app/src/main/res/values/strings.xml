@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AssignmentOne</string>
+    <string name="password_hint">Enter Password</string>
+    <!--    screen 2 as per assignment-->
+    <string name="footer">An <b>e-Teaching </b>Service from School</string>
+    <string name="terms">By proceeding,you are agree to our <b>Terms of service</b> and <b>Privacy Policy </b></string>
+    <string name="login">LOGIN WITH EMAIL</string>>
+</resources>
