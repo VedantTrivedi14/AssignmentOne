@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.assignmentone">
 
     <application
@@ -7,21 +8,22 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AssignmentOne">
+        android:theme="@style/Theme.AssignmentOne"
+        tools:ignore="AllowBackup">
         <activity
-            android:name=".Screen3"
+            android:name=".ConstraintlayoutActivity"
             android:label=" Screen 3 Visibility"
             android:exported="false" >
 
         </activity>
         <activity
-            android:name=".LoginUi"
+            android:name=".LoginUiActivity"
             android:exported="false"
-            android:label="Screen 2 login"></activity>
+            android:label="Screen 2 login" />
         <activity
-            android:name=".screen2"
+            android:name=".RelativelayoutActivity"
             android:exported="false"
-            android:label="Screen 1 Relative Layout"></activity>
+            android:label="Screen 1 Relative Layout" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

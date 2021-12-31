@@ -4,13 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 
-public class MainActivity extends AppCompatActivity {
-
+public class RelativelayoutActivity extends AppCompatActivity {
     //    create obect for require field
     private EditText etName, etEmail, etPassword, etPhone;
 
@@ -19,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_relativelayout);
+        //        set id to all views
         etName = findViewById(R.id.etName);
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPwd);
@@ -39,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             isAllFieldsChecked = CheckAllFields();
 
             if (isAllFieldsChecked) {
-                Intent i = new Intent(MainActivity.this, RelativelayoutActivity.class);
+                Intent i = new Intent(RelativelayoutActivity.this, LoginUiActivity.class);
                 startActivity(i);
             }
         });
@@ -69,6 +67,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-
 
 }

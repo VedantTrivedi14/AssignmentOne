@@ -4,5 +4,20 @@
     <!--    screen 2 as per assignment-->
     <string name="footer">An <b>e-Teaching </b>Service from School</string>
     <string name="terms">By proceeding,you are agree to our <b>Terms of service</b> and <b>Privacy Policy </b></string>
-    <string name="login">LOGIN WITH EMAIL</string>>
+    <string name="login">LOGIN WITH EMAIL</string>
+    <string name="user_details">User Details</string>
+    <string name="enter_name">Enter Name :</string>
+    <string name="enter_email">Enter Email:</string>
+    <string name="enter_password">Enter Password:</string>
+    <string name="select_age">Select Age:</string>
+    <string name="next">Next</string>
+    <string name="enter_phone_number">Enter Phone Number:</string>
+    <string name="register">Register</string>
+    <string name="connect_to_school">Connect To School</string>
+    <string name="account">Create a new account</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="top">Top</string>
+    <string name="center_view">Center View</string>
+    <string name="bottom">Bottom</string>
+
 </resources>
