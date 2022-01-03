@@ -8,11 +8,10 @@
 
     <ImageView
         android:id="@+id/imgL1"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-
+        style="@style/imgStyle"
         app:layout_constraintBottom_toTopOf="@id/imgL2"
         app:layout_constraintEnd_toStartOf="@id/imgR1"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/school"
@@ -20,19 +19,17 @@
 
     <Button
         android:id="@+id/btnTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Style"
         android:text="@string/top"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintBottom_toTopOf="@+id/btnCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
         android:id="@+id/btnCenter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Style"
         android:text="@string/center_view"
         app:layout_constraintBottom_toTopOf="@+id/btnBottom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,22 +38,20 @@
 
     <Button
         android:id="@+id/btnBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Style"
         android:text="@string/bottom"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCenter" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCenter"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <ImageView
         android:id="@+id/imgR1"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-
+        style="@style/imgStyle"
         app:layout_constraintBottom_toTopOf="@id/imgR2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toEndOf="@id/imgL1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/school"
@@ -64,11 +59,10 @@
 
     <ImageView
         android:id="@+id/imgL2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-
+        style="@style/imgStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/imgR2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgL1"
         app:srcCompat="@drawable/school"
@@ -76,11 +70,10 @@
 
     <ImageView
         android:id="@+id/imgR2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-
+        style="@style/imgStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toEndOf="@id/imgL2"
         app:layout_constraintTop_toBottomOf="@id/imgR1"
         app:srcCompat="@drawable/school"

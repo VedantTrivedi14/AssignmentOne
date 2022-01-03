@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="imgStyle">
+        <item name="android:layout_width">@dimen/witdh_height</item>
+        <item name="android:layout_height">@dimen/witdh_height</item>
+    </style>
+
+    <style name="Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:text">@string/connect_to_school</item>
+        <item name="android:textSize">@dimen/textSize</item>
+    </style>
+
+    <style name="text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/layout_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@color/btn</item>
+    </style>
+
+    <style name="oneStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/layout_margin</item>
+        <item name="android:backgroundTint">@color/btn</item>
+    </style>
+
+    <style name="btnMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_main</item>
+        <item name="android:backgroundTint">@color/cyan</item>
+        <item name="android:text">@string/next</item>
+    </style>
+
+    <style name="textView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_main</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:padding">@dimen/layout_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/txt_size</item>
+        <item name="android:text">@string/select_age</item>
+    </style>
+
+    <style name="etStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_main</item>
+        <item name="android:layout_margin">@dimen/layout_margin_main</item>
+        <item name="android:layout_marginStart">@dimen/layout_marginStart</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:padding">@dimen/padding</item>
+    </style>
+
+    <style name="etStyle1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/txt_view_height</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:layout_marginStart">@dimen/layout_marginStart</item>
+        <item name="android:textSize">@dimen/txt_size</item>
+        <item name="android:padding">@dimen/padding</item>
+    </style>
+
+    <style name="txtHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:padding">@dimen/layout_padding</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/user_details</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textColor">@color/cyan</item>
+    </style>
+</resources>

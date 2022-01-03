@@ -1,16 +1,18 @@
 package com.example.assignmentone;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class RelativelayoutActivity extends AppCompatActivity {
     //    create obect for require field
     private EditText etName, etEmail, etPassword, etPhone;
+
+    NumberPicker npPicker;
 
     boolean isAllFieldsChecked = false;
 
@@ -23,14 +25,9 @@ public class RelativelayoutActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPwd);
         etPhone = findViewById(R.id.etPhone);
+
         Button btnNext = findViewById(R.id.btn);
-        NumberPicker npPicker = findViewById(R.id.npAge);
-
-//        set min-max value to Number piker
-        npPicker.setMaxValue(129);
-        npPicker.setMinValue(0);
-
-
+        npPicker = findViewById(R.id.npAge);
 //        next button onclick Event
         btnNext.setOnClickListener(view -> {
 
@@ -41,6 +38,7 @@ public class RelativelayoutActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
 //        onCreate End
     }
 
@@ -67,5 +65,6 @@ public class RelativelayoutActivity extends AppCompatActivity {
         }
         return true;
     }
+
 
 }

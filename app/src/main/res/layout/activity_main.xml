@@ -4,132 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginEnd="20dp">
+    android:layout_marginEnd="@dimen/layout_marginEnd">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:circularflow_radiusInDP="20dp"
+        app:circularflow_radiusInDP="@dimen/cornerRadius"
         tools:context=".MainActivity">
 
         <TextView
             android:id="@+id/txtHeader"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:fontFamily="cursive"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="@string/user_details"
-            android:textColor="@color/cyan"
-            android:textSize="30sp" />
+            style="@style/txtHeader" />
 
         <EditText
             android:id="@+id/etName"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:layout_marginStart="20dp"
+            style="@style/etStyle1"
             android:background="@drawable/border"
-            android:ems="10"
             android:hint="@string/enter_name"
-
             android:importantForAutofill="no"
             android:inputType="textPersonName"
-            android:padding="5dp"
             tools:ignore="TextContrastCheck" />
 
         <EditText
             android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:layout_marginStart="20dp"
+            style="@style/etStyle1"
             android:background="@drawable/border"
-            android:ems="10"
             android:hint="@string/enter_email"
-
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
-            android:padding="5dp"
             tools:ignore="TextContrastCheck" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/layout_password"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="10dp"
-            android:layout_marginStart="20dp"
-            android:textSize="18sp"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            app:hintTextColor="@android:color/darker_gray"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/cyan">
 
-            <EditText
-                android:id="@+id/etPwd"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_margin="3dp"
-                android:layout_marginStart="20dp"
-                android:background="@drawable/border"
-                android:ems="10"
-                android:hint="@string/enter_password"
-                android:importantForAutofill="no"
-                android:inputType="textPassword"
-
-                android:padding="8dp"
-                android:textSize="18sp"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+        <EditText
+            android:id="@+id/etPwd"
+            style="@style/etStyle1"
+            android:hint="@string/enter_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck" />
 
 
         <EditText
             android:id="@+id/etPhone"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/border"
-            android:ems="10"
+            style="@style/etStyle"
             android:hint="@string/enter_phone_number"
             android:importantForAutofill="no"
             android:inputType="phone"
-            android:padding="5dp"
             tools:ignore="TextContrastCheck" />
 
         <TextView
             android:id="@+id/txtAge"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:gravity="start"
-            android:padding="10dp"
-
-            android:text="@string/select_age"
-
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            style="@style/textView" />
 
         <NumberPicker
             android:id="@+id/npAge"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/npHeight"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
+            android:layout_margin="@dimen/margin"
             android:background="@drawable/border"
             android:orientation="horizontal" />
 
         <Button
             android:id="@+id/btn"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/cyan"
-            android:text="@string/next"
+            style="@style/btnMain"
             tools:ignore="TextContrastCheck" />
 
     </LinearLayout>

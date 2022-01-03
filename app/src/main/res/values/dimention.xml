@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="witdh_height">150dp</dimen>
+    <dimen name="textSize">30sp</dimen>
+    <dimen name="layout_margin">20dp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="cornerRadius">20dp</dimen>
+    <dimen name="layout_marginEnd">5dp</dimen>
+    <dimen name="layout_height_main">50dp</dimen>
+    <dimen name="layout_margin_main">10dp</dimen>
+    <dimen name="layout_marginStart">20dp</dimen>
+    <dimen name="margin">5dp</dimen>
+    <dimen name="layout_padding">10dp</dimen>
+    <dimen name="npHeight">200dp</dimen>
+    <dimen name="txt_size">18sp</dimen>
+    <dimen name="txt_view_height">55dp</dimen>
+</resources>

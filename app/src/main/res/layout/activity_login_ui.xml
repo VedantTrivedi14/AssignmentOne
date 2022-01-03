@@ -4,103 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/red"
     tools:context=".LoginUiActivity">
 
     <ImageView
         android:id="@+id/imgView"
-        android:layout_width="164dp"
-        android:layout_height="144dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/imgStyle"
+        app:layout_constraintBottom_toTopOf="@+id/txtView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11"
         app:srcCompat="@drawable/school"
         tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txtView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/connect_to_school"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/textStyle"
+        app:layout_constraintBottom_toTopOf="@id/txtView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/txtView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:gravity="center"
-        android:padding="5dp"
+        style="@style/oneStyle"
         android:text="@string/terms"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txtFotter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
-
+        app:layout_constraintTop_toBottomOf="@id/txtView" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-
-        android:backgroundTint="@color/red"
+        style="@style/oneStyle"
         android:text="@string/login"
-        android:textColor="#000000"
-        app:cornerRadius="20dp"
+        app:cornerRadius="@dimen/cornerRadius"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714"
+        app:layout_constraintTop_toBottomOf="@id/txtView"
+        app:layout_constraintVertical_bias="0.567"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Style"
         android:text="@string/create_a_new_account"
-        app:layout_constraintBottom_toBottomOf="@+id/txtFotter"
+        app:layout_constraintBottom_toTopOf="@+id/txtFotter"
         app:layout_constraintEnd_toEndOf="@+id/txtView4"
-        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="@+id/txtView4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintVertical_bias="0.215" />
 
     <TextView
         android:id="@+id/txtView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/text"
         android:text="@string/register"
-        android:textColor="#DD2C00"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txtFotter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858" />
+        app:layout_constraintTop_toBottomOf="@id/txtView3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtFotter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/text"
         android:text="@string/footer"
-        android:textColor="#DD2C00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintTop_toBottomOf="@id/txtView4"
+        tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
