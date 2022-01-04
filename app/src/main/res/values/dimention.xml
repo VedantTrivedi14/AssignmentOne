@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="witdh_height">150dp</dimen>
+    <dimen name="witdh_height">100dp</dimen>
     <dimen name="textSize">30sp</dimen>
     <dimen name="layout_margin">20dp</dimen>
     <dimen name="padding">5dp</dimen>
