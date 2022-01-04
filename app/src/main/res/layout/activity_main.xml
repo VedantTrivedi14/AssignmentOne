@@ -67,7 +67,7 @@
             android:orientation="horizontal" />
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/btnNext"
             style="@style/btnMain"
             tools:ignore="TextContrastCheck" />
 

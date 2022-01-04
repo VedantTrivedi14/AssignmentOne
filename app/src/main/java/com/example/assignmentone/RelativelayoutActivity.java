@@ -26,7 +26,7 @@ public class RelativelayoutActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPwd);
         etPhone = findViewById(R.id.etPhone);
 
-        Button btnNext = findViewById(R.id.btn);
+        Button btnNext = findViewById(R.id.btnNext);
         npPicker = findViewById(R.id.npAge);
 //        next button onclick Event
         btnNext.setOnClickListener(view -> {

@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPwd);
         etPhone = findViewById(R.id.etPhone);
-        Button btnNext = findViewById(R.id.btn);
+        Button btnNext = findViewById(R.id.btnNext);
         NumberPicker npPicker = findViewById(R.id.npAge);
 
 //        set min-max value to Number piker

@@ -94,7 +94,7 @@
             android:background="@drawable/border" />
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/btnNext"
             style="@style/btnMain"
             android:layout_below="@id/npAge"
             android:layout_alignParentStart="true"
