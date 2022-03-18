@@ -61,14 +61,14 @@
         android:id="@+id/txtView4"
         style="@style/text"
         android:text="@string/register"
-        app:layout_constraintBottom_toTopOf="@+id/txtFotter"
+        app:layout_constraintBottom_toTopOf="@+id/txtFooter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtView3"
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/txtFotter"
+        android:id="@+id/txtFooter"
         style="@style/text"
         android:text="@string/footer"
         app:layout_constraintBottom_toBottomOf="parent"

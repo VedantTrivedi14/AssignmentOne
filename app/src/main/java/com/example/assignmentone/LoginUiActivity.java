@@ -16,7 +16,7 @@ public class LoginUiActivity extends AppCompatActivity {
         Button btnLogin = findViewById(R.id.btnLogin);
 
         btnLogin.setOnClickListener(view -> {
-            Intent i = new Intent(LoginUiActivity.this, ConstraintlayoutActivity.class);
+            Intent i = new Intent(LoginUiActivity.this, ConstraintLayoutActivity.class);
             startActivity(i);
         });
 

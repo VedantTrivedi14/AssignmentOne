@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    //    create obect for require field
+    //    create object for require field
     private EditText etName, etEmail, etPassword, etPhone;
 
     boolean isAllFieldsChecked = false;

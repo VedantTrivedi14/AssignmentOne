@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ConstraintlayoutActivity extends AppCompatActivity {
+public class ConstraintLayoutActivity extends AppCompatActivity {
 
     private ImageView imgL1, imgL2, imgR1, imgR2;
 

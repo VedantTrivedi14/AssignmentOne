@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AssignmentOne"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".ConstraintlayoutActivity"
+            android:name=".ConstraintLayoutActivity"
             android:label=" Screen 3 Visibility"
             android:exported="false" >
 

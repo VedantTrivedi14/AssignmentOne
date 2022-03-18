@@ -9,7 +9,7 @@ import android.widget.NumberPicker;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RelativelayoutActivity extends AppCompatActivity {
-    //    create obect for require field
+    //    create object for require field
     private EditText etName, etEmail, etPassword, etPhone;
 
     NumberPicker npPicker;

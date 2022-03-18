@@ -2,8 +2,8 @@
 <resources>
 
     <style name="imgStyle">
-        <item name="android:layout_width">@dimen/witdh_height</item>
-        <item name="android:layout_height">@dimen/witdh_height</item>
+        <item name="android:layout_width">@dimen/width_height</item>
+        <item name="android:layout_height">@dimen/width_height</item>
     </style>
 
     <style name="Style">
