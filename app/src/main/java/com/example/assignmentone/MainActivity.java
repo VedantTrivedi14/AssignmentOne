@@ -2,9 +2,11 @@ package com.example.assignmentone;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.NumberPicker;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     //    create object for require field
     private EditText etName, etEmail, etPassword, etPhone;
-
-    boolean isAllFieldsChecked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +31,10 @@ public class MainActivity extends AppCompatActivity {
         npPicker.setMaxValue(129);
         npPicker.setMinValue(0);
 
-
 //        next button onclick Event
         btnNext.setOnClickListener(view -> {
 
-            isAllFieldsChecked = CheckAllFields();
-
-            if (isAllFieldsChecked) {
+            if (checkAllFields()) {
                 Intent i = new Intent(MainActivity.this, RelativelayoutActivity.class);
                 startActivity(i);
             }
@@ -45,25 +42,25 @@ public class MainActivity extends AppCompatActivity {
 //        onCreate End
     }
 
-    private boolean CheckAllFields() {
+    private boolean checkAllFields() {
         if (etName.length() == 0) {
-            etName.setError("This field is required");
+            Toast.makeText(this, R.string.name, Toast.LENGTH_SHORT).show();
+            return false;
+        }else if (etEmail.length() == 0) {
+            Toast.makeText(this, R.string.email, Toast.LENGTH_SHORT).show();
+            return false;
+        }else if (Patterns.EMAIL_ADDRESS.matcher(etEmail.getText().toString()).matches()){
+            Toast.makeText(this, R.string.invalid, Toast.LENGTH_SHORT).show();
             return false;
         }
-
-        if (etEmail.length() == 0) {
-            etEmail.setError("This field is required");
-            return false;
-        }
-        if (etPassword.length() == 0) {
-            etPassword.setError("Password is required");
+        else if (etPassword.length() == 0) {
+            Toast.makeText(this, R.string.pwd, Toast.LENGTH_SHORT).show();
             return false;
         } else if (etPassword.length() < 8) {
-            etPassword.setError("Password must be minimum 8 characters");
+            Toast.makeText(this, R.string.pwd_invalid, Toast.LENGTH_SHORT).show();
             return false;
-        }
-        if (etPhone.length() != 10) {
-            etPhone.setError("Phone Number must be 10 digit number.");
+        }else if (etPhone.length() != 10) {
+            Toast.makeText(this, R.string.phone, Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;

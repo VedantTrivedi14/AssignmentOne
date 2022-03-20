@@ -19,5 +19,11 @@
     <string name="top">Top</string>
     <string name="center_view">Center View</string>
     <string name="bottom">Bottom</string>
+    <string name="name">Enter name</string>
+    <string name="email">Enter valid email</string>
+    <string name="invalid">Invalid email</string>
+    <string name="pwd">Password is required</string>
+    <string name="pwd_invalid">Password must be minimum 8 characters</string>
+    <string name="phone">Phone Number must be 10 digit number.</string>
 
 </resources>

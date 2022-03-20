@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/AssignmentOne/app/src/main/res/drawable/border.xml" value="0.185" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/AssignmentOne/app/src/main/res/layout/activity_constraintlayout.xml" value="0.34479166666666666" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/AssignmentOne/app/src/main/res/layout/activity_login_ui.xml" value="0.28940217391304346" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/AssignmentOne/app/src/main/res/layout/activity_main.xml" value="0.34479166666666666" />
+        <entry key="..\:/AndroidStudioProjects/Tatvasoft_Android/Assignments/AssignmentOne/app/src/main/res/layout/activity_relativelayout.xml" value="0.34479166666666666" />
         <entry key="..\:/Users/vedant trivedi/AndroidStudioProjects/Tatvasoft Android/AssignmentOne/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21203703703703702" />
         <entry key="..\:/Users/vedant trivedi/AndroidStudioProjects/Tatvasoft Android/AssignmentOne/app/src/main/res/drawable/border.xml" value="0.21203703703703702" />
         <entry key="..\:/Users/vedant trivedi/AndroidStudioProjects/Tatvasoft Android/AssignmentOne/app/src/main/res/drawable/btnbackground.xml" value="0.2074074074074074" />
